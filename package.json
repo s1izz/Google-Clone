@@ -1,4 +1,6 @@
 {
+  "homepage": ".",
+  "proxy": "http://localhost:3003",
   "name": "google-clone",
   "version": "0.1.0",
   "private": true,
