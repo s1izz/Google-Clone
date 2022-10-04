@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useStateValue } from "../StateProvider"
 import { actionTypes } from "../reducer";
 
-function Search({ hideButtons }) {
+function Search({ hideButtons = false }) {
   const [{}, dispatch] = useStateValue()
 
   const [input, setInput] = useState("");
@@ -23,7 +23,7 @@ function Search({ hideButtons }) {
     })
 
     // idek
-    navigate("/search");
+    navigate('/search');
   };
 
   return (

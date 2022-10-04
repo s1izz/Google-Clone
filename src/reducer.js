@@ -1,9 +1,9 @@
 export const initialState = {
-    term: null
+    term: null,
 }
 
 export const actionTypes = {
-    SET_SEARCH_TERM: "SET_SEARCH_TERM"
+    SET_SEARCH_TERM: "SET_SEARCH_TERM",
 }
 
 const reducer = (state, action) => {
@@ -15,8 +15,8 @@ const reducer = (state, action) => {
                 term: action.term,
             }
 
-            default:
-                return state
+        default:
+            return state
     }
 }
 
